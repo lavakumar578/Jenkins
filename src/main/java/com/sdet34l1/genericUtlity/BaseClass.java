@@ -90,14 +90,16 @@ public class BaseClass {
 		String timeout=PropertiesUtility.getDataFromProperty("timeOut");
 		longTimeOut=javaLangUtility.stringToLong(timeout);
 		randomNum=javaLangUtility.getRandomNumber(1000);
-//		username=PropertiesUtility.getDataFromProperty("userName");
-//		password=PropertiesUtility.getDataFromProperty("password");
-//		url=PropertiesUtility.getDataFromProperty("url");
-//		browser=PropertiesUtility.getDataFromProperty("browser");
-		browser=System.getProperty("BROWSER");
-		url=System.getProperty("URL");
-		username=System.getProperty("USERNAME");
-		password=System.getProperty("PASSWORD");
+		
+		username=PropertiesUtility.getDataFromProperty("userName");
+		password=PropertiesUtility.getDataFromProperty("password");
+		url=PropertiesUtility.getDataFromProperty("url");
+		browser=PropertiesUtility.getDataFromProperty("browser");
+		
+//		browser=System.getProperty("BROWSER");
+//		url=System.getProperty("URL");
+//		username=System.getProperty("USERNAME");
+//		password=System.getProperty("PASSWORD");
 		switch(browser)
 		{
 		case "chrome":

@@ -12,7 +12,7 @@ public class CreateContactsTest extends BaseClass{
 	ContactPage contactPage;
 	CreateContactPage createContactPage;
 	ContactInformationPage contactInformationPage;
-	@Test(groups="sanity")
+	@Test
 	public void createContactTest()
 	{
 		
